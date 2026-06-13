@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import Newsletter from '../components/Newsletter.astro';
+---
+<Base title="About" description="Caribbean Intelligence powered by BingiTech — data-driven insights on tourism, economics, and culture.">
+  <section class="about-hero">
+    <div class="container">
+      <h1>Caribbean Intelligence powered by BingiTech</h1>
+    </div>
+  </section>
+
+  <section class="container content">
+    <p>Pulse is the editorial arm of <a href="https://bingitech.io">BingiTech</a> — built to surface the data that matters across the Caribbean region.</p>
+
+    <p>We cover tourism economics, arrival trends, development signals, and cultural shifts — always led by what the numbers actually say, not what headlines want you to believe.</p>
+
+    <h2>Why this exists</h2>
+    <p>The Caribbean is one of the most tourism-dependent regions on earth, yet reliable, timely data analysis is scarce. Pulse fills that gap with original research, transparent sourcing, and a perspective rooted in the region — not parachuted in.</p>
+
+    <h2>Who's behind it</h2>
+    <p>Pulse is created by Bingi, founder of BingiTech. Caribbean diaspora. AI engineer. Building tools and media that serve the region's interests with clarity and integrity.</p>
+
+    <Newsletter heading="Stay informed" />
+  </section>
+</Base>
+
+<style>
+  .about-hero {
+    background: var(--green);
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+  .about-hero h1 {
+    color: var(--white);
+    font-size: 2rem;
+  }
+  .content {
+    padding-top: 3rem;
+    max-width: 700px;
+  }
+  .content p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .content h2 {
+    color: var(--green);
+    font-size: 1.3rem;
+    margin: 2rem 0 0.75rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 0.75rem;
+  }
+</style>

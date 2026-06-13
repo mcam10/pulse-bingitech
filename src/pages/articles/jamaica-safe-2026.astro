@@ -1,0 +1,130 @@
+---
+import Base from '../../layouts/Base.astro';
+import DataCallout from '../../components/DataCallout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+<Base title="Is Jamaica Safe to Visit in 2026?" description="Jamaica welcomed 3.7M visitors through Nov 2025 despite Hurricane Melissa. Here's what arrival data says about safety and demand in 2026.">
+  <article class="container article">
+    <header class="article-header">
+      <span class="article-tag">Tourism Data</span>
+      <h1>Is Jamaica Safe to Visit in 2026? What the Arrival Data Actually Says</h1>
+      <div class="article-meta">
+        <span class="author">By Bingi</span>
+        <span class="date">June 2026</span>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <p>Every year, the same question cycles through travel forums and Google searches: <em>Is Jamaica safe?</em> But safety perceptions and actual visitor behavior tell different stories. Let's look at what the arrival data — not anecdotes — actually reveals about demand for Jamaica in 2026.</p>
+
+      <h2>The numbers through November 2025</h2>
+
+      <p>Despite Hurricane Melissa disrupting parts of the fall season, Jamaica's tourism machine kept moving. The island welcomed <strong>3.7 million visitors</strong> through November 2025 — a clear signal that travelers are voting with their wallets.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="3.7M" label="Visitors to Jamaica through Nov 2025" />
+        <DataCallout stat="+2.5%" label="Regional stayover arrivals (to 35M)" />
+        <DataCallout stat="+24%" label="South America source market surge" />
+      </div>
+
+      <h2>Regional context: the Caribbean is growing</h2>
+
+      <p>Stayover arrivals across the Caribbean rose 2.5% to approximately 35 million visitors regionally. Jamaica's share of that growth remains strong, driven by airlift expansion and resort pipeline completions.</p>
+
+      <p>The standout story regionally is the <strong>24% surge from South American source markets</strong> — a diversification trend that reduces dependency on any single corridor.</p>
+
+      <h2>Where demand softened</h2>
+
+      <div class="callout-grid">
+        <DataCallout stat="-5.3%" label="Canada arrivals softened" />
+        <DataCallout stat="+2.4%" label="Q1 2026 already showing growth" />
+      </div>
+
+      <p>Canadian arrivals softened by 5.3%, likely reflecting exchange rate pressure and domestic economic headwinds rather than any safety perception shift. The Canada corridor has historically been price-sensitive, and this pattern matches what we're seeing across other Caribbean destinations.</p>
+
+      <h2>2026 outlook</h2>
+
+      <p>Q1 2026 is already showing <strong>+2.4% growth</strong>, and the Caribbean Tourism Organization projects <strong>3-5% stayover growth</strong> for the full year. Forward bookings and airlift data support this range.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="3–5%" label="CTO projected stayover growth for 2026" />
+      </div>
+
+      <h2>What this means</h2>
+
+      <p>The data doesn't support the safety-concern narrative that dominates social media. Millions of travelers continue to choose Jamaica — and the trend line is up, not down. When you strip away anecdote and look at revealed preference (people actually booking and arriving), Jamaica remains one of the Caribbean's strongest performers.</p>
+
+      <p>Safety is always personal and contextual. But if the question is whether the market believes Jamaica is worth visiting — 3.7 million data points say yes.</p>
+    </div>
+
+    <Newsletter heading="Get more Caribbean data insights" />
+
+    <footer class="article-footer">
+      <p><em>Sources: Caribbean Tourism Organization preliminary data (2025), Jamaica Tourist Board arrival statistics, CTO 2026 outlook report.</em></p>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .article {
+    max-width: 740px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  .article-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    margin-bottom: 0.75rem;
+  }
+  .article-header h1 {
+    font-size: 2rem;
+    color: var(--green);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+  .author {
+    font-weight: 600;
+    color: var(--green);
+  }
+  .article-body h2 {
+    font-size: 1.25rem;
+    color: var(--green);
+    margin: 2rem 0 0.75rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 0.75rem;
+  }
+  .article-body p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .callout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray);
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+</style>

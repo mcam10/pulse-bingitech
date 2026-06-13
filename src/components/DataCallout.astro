@@ -1,0 +1,34 @@
+---
+interface Props {
+  stat: string;
+  label: string;
+}
+
+const { stat, label } = Astro.props;
+---
+<div class="callout">
+  <span class="callout-stat">{stat}</span>
+  <span class="callout-label">{label}</span>
+</div>
+
+<style>
+  .callout {
+    background: var(--green);
+    color: var(--white);
+    border-left: 4px solid var(--gold);
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .callout-stat {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .callout-label {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+</style>

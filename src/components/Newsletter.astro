@@ -1,0 +1,51 @@
+---
+interface Props {
+  heading?: string;
+}
+
+const { heading = 'Get Caribbean Intelligence Weekly' } = Astro.props;
+---
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <h2>{heading}</h2>
+    <p>Data-driven insights on Caribbean tourism, economics, and culture. Delivered every week.</p>
+    <a href="https://caribbeanintelligence.beehiiv.com" class="btn" target="_blank" rel="noopener">
+      Subscribe Free &rarr;
+    </a>
+  </div>
+</section>
+
+<style>
+  .newsletter {
+    background: var(--green);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .newsletter-inner h2 {
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .newsletter-inner p {
+    color: var(--white);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+  }
+  .btn:hover {
+    background: var(--gold-light);
+    color: var(--green-dark);
+  }
+</style>
