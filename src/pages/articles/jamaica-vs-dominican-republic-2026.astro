@@ -1,0 +1,133 @@
+---
+import Base from '../../layouts/Base.astro';
+import DataCallout from '../../components/DataCallout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+<Base title="Jamaica vs Dominican Republic — Which Caribbean Island Should You Visit in 2026?" description="Jamaica welcomed 3.7M visitors while the DR leads the Caribbean with 10M+. A data-driven comparison to help you choose.">
+  <article class="container article">
+    <header class="article-header">
+      <span class="article-tag">Destination Compare</span>
+      <h1>Jamaica vs Dominican Republic — Which Caribbean Island Should You Visit in 2026?</h1>
+      <div class="article-meta">
+        <span class="author">By Bingi</span>
+        <span class="date">June 2026</span>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <p>Two of the Caribbean's biggest draws. Two very different recovery stories. If you're choosing between Jamaica and the Dominican Republic in 2026, here's what the demand data, occupancy rates, and connectivity numbers actually say — no vibes, just signal.</p>
+
+      <h2>Scale: the DR leads the Caribbean</h2>
+
+      <p>The Dominican Republic is the Caribbean's volume leader, welcoming <strong>over 10 million visitors</strong> annually — nearly three times Jamaica's 3.7 million. That gap isn't new, but it's widening: the DR's all-inclusive pipeline, Punta Cana airlift dominance, and aggressive source market diversification are compounding.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="10M+" label="DR visitors — Caribbean's #1 destination" />
+        <DataCallout stat="3.7M" label="Jamaica visitors through Nov 2025" />
+        <DataCallout stat="+24%" label="South America surge benefiting both" />
+      </div>
+
+      <h2>Post-Melissa occupancy tells the real story</h2>
+
+      <p>Hurricane Melissa's impact on Jamaica's accommodation sector is visible in the data. Post-storm hotel occupancy in Jamaica sits at <strong>42%</strong> — a significant gap versus the Dominican Republic's <strong>68%</strong>. That 26-point spread reflects both physical rebuild timelines and booking confidence lag.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="42%" label="Jamaica post-Melissa hotel occupancy" />
+        <DataCallout stat="68%" label="DR hotel occupancy" />
+        <DataCallout stat="26pts" label="Occupancy gap between destinations" />
+      </div>
+
+      <p>For travelers, that gap means opportunity: Jamaica's lower occupancy translates to better availability, potential rate softening, and less crowding at premium properties. The DR's higher occupancy signals tighter inventory and stronger pricing power.</p>
+
+      <h2>Flight connectivity comparison</h2>
+
+      <p>The Dominican Republic holds a structural advantage in airlift. Punta Cana (PUJ) and Santo Domingo (SDQ) together offer more direct routes from the US, Canada, and Europe than Jamaica's Montego Bay (MBJ) and Kingston (KIN) combined. Charter operations from South America further widen the gap.</p>
+
+      <p>Jamaica's airlift is recovering — new routes announced for winter 2026 will help — but the DR's multi-airport strategy gives it more connectivity at scale. If you're flying from a secondary US city, you're more likely to find a nonstop to Punta Cana.</p>
+
+      <h2>The South America factor</h2>
+
+      <p>Both destinations are benefiting from the <strong>24% surge in South American arrivals</strong> to the Caribbean. The DR has been faster to capitalize — Portuguese-language marketing, direct flights from São Paulo and Bogotá, and visa-on-arrival programs have made it the default Caribbean choice for Brazilian and Colombian travelers.</p>
+
+      <p>Jamaica is seeing gains from this corridor too, but from a smaller base. The <a href="/articles/caribbean-tourism-trends-2026">regional diversification trend</a> favors both, but the DR's head start is meaningful.</p>
+
+      <h2>So which should you visit?</h2>
+
+      <p><strong>Choose Jamaica if:</strong> you want fewer crowds, potential value on premium hotels, cultural depth beyond the resort, and you're comfortable with a destination still rebuilding from Melissa. The <a href="/articles/jamaica-safe-2026">arrival data confirms</a> millions still choose Jamaica — the fundamentals are strong.</p>
+
+      <p><strong>Choose the DR if:</strong> you want maximum flight options, higher hotel availability confidence, the broadest all-inclusive selection in the Caribbean, and a destination running at full operational capacity.</p>
+
+      <p>Both are growing. Both are diversifying. The data says neither is a bad bet — but they're serving different traveler profiles in 2026.</p>
+    </div>
+
+    <Newsletter heading="Get weekly Caribbean destination data" />
+
+    <footer class="article-footer">
+      <p><em>Sources: Caribbean Tourism Organization 2025 preliminary statistics, Jamaica Tourist Board arrival data, Dominican Republic Ministry of Tourism occupancy reports, CTO source market analysis.</em></p>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .article {
+    max-width: 740px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  .article-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    margin-bottom: 0.75rem;
+  }
+  .article-header h1 {
+    font-size: 2rem;
+    color: var(--green);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+  .author {
+    font-weight: 600;
+    color: var(--green);
+  }
+  .article-body h2 {
+    font-size: 1.25rem;
+    color: var(--green);
+    margin: 2rem 0 0.75rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 0.75rem;
+  }
+  .article-body p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .callout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray);
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+</style>
