@@ -1,0 +1,147 @@
+---
+import Base from '../../layouts/Base.astro';
+import DataCallout from '../../components/DataCallout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+---
+<Base title="Jamaica Hotels Reopening Post-Melissa — The Complete Status Update" description="Hotel occupancy dropped to 42% after Hurricane Melissa. Here's the resort reopening timeline, IDB recovery funding, and what travelers need to know.">
+  <article class="container article">
+    <header class="article-header">
+      <span class="article-tag">Recovery Update</span>
+      <h1>Jamaica Hotels Reopening Post-Melissa — The Complete Status Update</h1>
+      <div class="article-meta">
+        <span class="author">By Bingi</span>
+        <span class="date">June 2026</span>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <p>Hurricane Melissa hit Jamaica's tourism corridor hard in late 2025. Six months later, the recovery picture is coming into focus — and the data tells a story of significant progress alongside real gaps that travelers need to understand before booking.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="42%" label="Current post-Melissa hotel occupancy" />
+        <DataCallout stat="68%" label="Pre-hurricane occupancy baseline" />
+        <DataCallout stat="$1.26B" label="IDB recovery commitment" />
+      </div>
+
+      <h2>The occupancy gap: 42% vs 68%</h2>
+
+      <p>Before Melissa, Jamaica's hotel sector was running at <strong>68% occupancy</strong> — healthy by Caribbean standards and above break-even for most operators. Post-storm, that number dropped to <strong>42%</strong>. The 26-point gap reflects both supply constraints (damaged inventory offline) and demand softening (travelers rerouting to unaffected destinations).</p>
+
+      <p>For context, the <a href="/articles/jamaica-vs-dominican-republic-2026">Dominican Republic maintained 68% occupancy</a> through the same period — absorbing some of Jamaica's displaced demand.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="26pts" label="Occupancy gap from pre-Melissa baseline" />
+        <DataCallout stat="Q2–Q3 2026" label="Major resort reopening window" />
+      </div>
+
+      <h2>Resort reopening timeline: Q2–Q3 2026</h2>
+
+      <p>The major branded resorts — Sandals, Hyatt, Marriott properties along the north coast — completed critical repairs in Q1 2026 and are operational. The next wave of reopenings is concentrated in <strong>Q2 and Q3 2026</strong>:</p>
+
+      <p><strong>Already reopened (Q1 2026):</strong> Large-chain all-inclusives with corporate insurance and rapid-response repair contracts. These properties are fully bookable and running normal operations.</p>
+
+      <p><strong>Reopening Q2 2026 (April–June):</strong> Mid-tier resort properties and boutique hotels with more complex damage. Many are accepting bookings now for July onward.</p>
+
+      <p><strong>Reopening Q3 2026 (July–September):</strong> Smaller operators, villas, and properties with structural work remaining. Some are offering soft-opening rates to rebuild occupancy momentum.</p>
+
+      <h2>The $1.26 billion IDB commitment</h2>
+
+      <p>The Inter-American Development Bank's <strong>$1.26 billion commitment</strong> to Jamaica's recovery is the largest single recovery package the Caribbean has seen. The funding covers three pillars:</p>
+
+      <p><strong>Infrastructure rebuild:</strong> Roads, utilities, and airport facilities serving tourism corridors — the connective tissue that makes hotel operations possible.</p>
+
+      <p><strong>Climate adaptation:</strong> Building codes, drainage systems, and coastal protection designed to reduce vulnerability to future storms. This is investment in long-term resilience, not just short-term repair.</p>
+
+      <p><strong>Tourism corridor restoration:</strong> Direct support for attraction rebuilds, beach restoration, and destination marketing to accelerate demand recovery.</p>
+
+      <p>The <a href="/articles/caribbean-tourism-trends-2026">broader regional trend</a> of post-disaster resilience is playing out in Jamaica's recovery speed — the market absorbed the shock faster than comparable events in the prior decade.</p>
+
+      <div class="callout-grid">
+        <DataCallout stat="$1.26B" label="Total IDB recovery package" />
+        <DataCallout stat="3 pillars" label="Infrastructure, climate, tourism" />
+      </div>
+
+      <h2>What travelers should know before booking</h2>
+
+      <p><strong>Check property status directly.</strong> Not all booking platforms reflect real-time reopening status. Contact properties or their brand's reservations team to confirm operational status for your dates.</p>
+
+      <p><strong>Expect value.</strong> The 42% occupancy means softer rates and better upgrade availability than Jamaica has offered in years. Properties reopening in Q2-Q3 are particularly motivated to rebuild occupancy and offering aggressive introductory pricing.</p>
+
+      <p><strong>North coast vs south coast.</strong> Melissa's impact was concentrated on the north coast (Montego Bay, Ocho Rios, Negril corridor). Kingston and the south coast were less affected and have been operating at near-normal capacity throughout.</p>
+
+      <p><strong>The destination is safe.</strong> As the <a href="/articles/jamaica-safe-2026">arrival data confirms</a>, Jamaica welcomed 3.7 million visitors through November 2025 despite the hurricane. The fundamentals — airlift, attractions, hospitality infrastructure — remain strong. Recovery is a capacity question, not a safety one.</p>
+
+      <p>Jamaica's hotel sector is rebuilding with better infrastructure and stronger climate resilience. The <a href="/articles/best-time-visit-jamaica-2026">best time to visit</a> in 2026 may be now — when availability is wide open and the recovery investment is landing.</p>
+    </div>
+
+    <Newsletter heading="Get weekly Jamaica recovery updates" />
+
+    <footer class="article-footer">
+      <p><em>Sources: Jamaica Tourist Board occupancy data, Inter-American Development Bank project announcements, Caribbean Tourism Organization recovery reports, hotel brand reopening communications.</em></p>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .article {
+    max-width: 740px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .article-header {
+    margin-bottom: 2rem;
+  }
+  .article-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    margin-bottom: 0.75rem;
+  }
+  .article-header h1 {
+    font-size: 2rem;
+    color: var(--green);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+  .author {
+    font-weight: 600;
+    color: var(--green);
+  }
+  .article-body h2 {
+    font-size: 1.25rem;
+    color: var(--green);
+    margin: 2rem 0 0.75rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 0.75rem;
+  }
+  .article-body p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .callout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray);
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+</style>
